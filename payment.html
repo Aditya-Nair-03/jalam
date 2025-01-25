@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="payment.html">payment</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Make a Payment</h2>
+        <form action="#" method="POST">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="month" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <label for="cardholder-name">Cardholder Name:</label>
+            <input type="text" id="cardholder-name" name="cardholder-name" required>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="upi-id">UPI ID:</label>
+            <input type="text" id="upi-id" name="upi-id" required>
+
+            <label for="payment-method">Choose a UPI method:</label>
+            <div class="upi-methods">
+                <input type="radio" id="phonepe" name="payment-method" value="PhonePe"><label for="phonepe"><i class="fas fa-mobile-alt"></i> PhonePe</label>
+                <input type="radio" id="googlepay" name="payment-method" value="Google Pay"><label for="googlepay"><i class="fab fa-google"></i> Google Pay</label>
+                <input type="radio" id="paytm" name="payment-method" value="Paytm"><label for="paytm"><i class="fas fa-wallet"></i> Paytm</label>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Water Usage Tracker. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

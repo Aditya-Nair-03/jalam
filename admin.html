@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div id="admin-dashboard">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+        <main>
+            <section id="user-management">
+                <h2>User Management</h2>
+                <button id="add-user-btn">Add User</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-table">
+                        <!-- User data will be loaded here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="usage-data">
+                <h2>Water Usage Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Usage (Liters)</th>
+                            <th>Last Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usage-table">
+                        <!-- Water usage data will be loaded here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="notifications">
+                <h2>Send Notifications</h2>
+                <textarea id="notification-text" placeholder="Enter notification message"></textarea>
+                <button id="send-notification-btn">Send Notification</button>
+            </section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

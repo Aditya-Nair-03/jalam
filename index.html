@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Usage Tracker</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div id="three-container"></div>
+    <h1 class="header-title">J A L A M</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="dropdown-menu">
+      <ul>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </div>
+    <div class="personal-info">
+      <span id="user-name"></span>
+      <img id="profile-picture">
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="cards">
+      <!-- Flow Rate Card -->
+      <div class="card">
+        <h3>Flow Rate</h3>
+        <div class="circle">
+          <p id="flow-rate">Loading...</p> <!-- Updated to fetch real-time data -->
+          <span>L/min</span>
+        </div>
+      </div>
+      <!-- Session Usage Card -->
+      <div class="card">
+        <h3>Session Usage</h3>
+        <div class="circle">
+          <p id="session-usage">Loading...</p> <!-- Updated to fetch real-time data -->
+          <span>Liters</span>
+        </div>
+      </div>
+      <!-- Total Usage Card -->
+      <div class="card">
+        <h3>Total Usage</h3>
+        <div class="icon">
+          <div class="circle">
+            <p id="total-usage">Loading...</p> <!-- Updated to fetch real-time data -->
+            <span>Liters</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly Usage Chart (Placeholder for Now) -->
+    <div class="chart-container">
+      <h3>Week Usage</h3>
+      <canvas id="weeklyUsageChart"></canvas>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Water Usage Tracker. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Link JavaScript File -->
+  <script type="module" src="index.js"></script>
+</body>
+</html>
